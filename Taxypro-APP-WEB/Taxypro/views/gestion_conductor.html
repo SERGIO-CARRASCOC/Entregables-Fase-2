@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Conductores</title>
+    <link rel="icon" href="/img/icon_gestion_conductor.webp">
+    <link rel="stylesheet" href="/css/gestion_conductor.css">
+</head>
+<body>
+    <header>
+        <h1>TaxyPro</h1>
+        <nav>
+            <ul>
+                <li><a href="/views/index.html" target="_blank">Inicio</a></li>
+                <li><a href="/views/gestion_conductor.html" target="_blank">Gestión de Conductores</a></li>
+                <li><a href="/views/contacto.html" target="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gestión de Conductores</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Teléfono</th>
+                    <th>Email</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="driverTableBody">
+                <!-- Filas de conductores se agregarán aquí dinámicamente -->
+            </tbody>
+        </table>
+        <button onclick="addDriver()">Agregar Conductor</button>
+    </main>
+
+    <footer>
+        <p>© 2024 TaxyPro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="/js/gestion_conductor.js"></script>
+</body>
+</html>
